@@ -4,13 +4,7 @@ require("dotenv/config");
 const cors = require("cors");
 const { default: mongoose } = require("mongoose");
 
-app.use(cors(
-  { 
-    origin: ["http://deploy-mern-1whq.vercel.app"] ,
-    methods:["POST","GET"],
-    credentials:true
-  }
-  ));
+app.use(cors({ origin: true }));
 app.use(express.json());
 
 // user authentication routes
