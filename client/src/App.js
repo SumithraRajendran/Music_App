@@ -19,11 +19,10 @@ import { motion, AnimatePresence } from "framer-motion";
 function App() {
   const firebaseAuth = getAuth(app);
   const navigate = useNavigate();
-  const [{ user, allSongs, song, isSongPlaying, miniPlayer }, dispatch] =
-    useStateValue();
+  const [{ user, allSongs, isSongPlaying }, dispatch] = useStateValue();
   const [isLoading, setIsLoading] = useState(false);
 
-  const [auth, setAuth] = useState(
+  const [setAuth] = useState(
     false || window.localStorage.getItem("auth") === "true"
   );
 
