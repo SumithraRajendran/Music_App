@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useStateValue } from "../Context/StateProvider";
 import { IoMdClose } from "react-icons/io";
-import { IoArrowRedo, IoArrowUndo, IoMusicalNote } from "react-icons/io5";
+import { IoArrowRedo, IoMusicalNote } from "react-icons/io5";
 import { motion } from "framer-motion";
 
 import AudioPlayer from "react-h5-audio-player";

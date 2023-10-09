@@ -1,14 +1,11 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { AiOutlineClear } from "react-icons/ai";
-import { IoAdd, IoTrash, IoPause, IoPlay } from "react-icons/io5";
+import { IoAdd, IoTrash } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { useStateValue } from "../Context/StateProvider";
 import { actionType } from "../Context/reducer";
-import {
-  deleteSongById,
-  getAllSongs,
-} from "../api";
+import { deleteSongById, getAllSongs } from "../api";
 import AlertError from "./AlertError";
 import AlertSuccess from "./AlertSuccess.jsx";
 import { storage } from "../config/firebase.config";
