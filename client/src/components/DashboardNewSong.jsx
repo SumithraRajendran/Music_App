@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
+  getStorage,
   ref,
   getDownloadURL,
   uploadBytesResumable,
